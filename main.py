@@ -11,7 +11,7 @@ class Pascal:
     def __getitem__(self, item):
         if item > 0:
             return self.list[item-1]
-        elif item > len(self.list):
+        elif item < 1:
             return KeyError
         elif item > len(self.list):
             return KeyError
